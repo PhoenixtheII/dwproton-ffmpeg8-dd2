@@ -1,5 +1,5 @@
 diff --git a/Makefile.in b/Makefile.in
-index 05a96d36..520d00e5 100644
+index 05a96d36..3c8f0ee0 100644
 --- a/Makefile.in
 +++ b/Makefile.in
 @@ -559,7 +559,6 @@ FFMPEG_CONFIGURE_ARGS += \
@@ -10,3 +10,12 @@ index 05a96d36..520d00e5 100644
  	--enable-libvorbis \
  	--enable-decoder=indeo5 \
  	--enable-decoder=adpcm_ms \
+@@ -592,8 +591,6 @@ FFMPEG_CONFIGURE_ARGS += \
+ 	--enable-decoder=alac \
+ 	--enable-decoder=pcm* \
+ 	--enable-decoder=apng \
+-	--enable-decoder=libvpx_vp8 \
+-	--enable-decoder=libvpx_vp9 \
+ 	--enable-encoder=aac \
+ 	--enable-encoder=h264_vaapi \
+ 	--enable-encoder=hevc_vaapi \
