@@ -1,5 +1,5 @@
 diff --git a/Makefile.in b/Makefile.in
-index 05a96d36..3c8f0ee0 100644
+index 05a96d36..5e882150 100644
 --- a/Makefile.in
 +++ b/Makefile.in
 @@ -559,7 +559,6 @@ FFMPEG_CONFIGURE_ARGS += \
@@ -19,3 +19,12 @@ index 05a96d36..3c8f0ee0 100644
  	--enable-encoder=aac \
  	--enable-encoder=h264_vaapi \
  	--enable-encoder=hevc_vaapi \
+@@ -642,7 +639,7 @@ FFMPEG_x86_64-unix_CONFIGURE_ARGS := \
+ 	--target-os=linux
+ 
+ FFMPEG_x86_64-unix_CONFIGURE_ARGS += \
+-	--optflags="$(CFLAGS) $(x86_64_CFLAGS)"
++	--optflags="$(CFLAGS) $(x86_64_CFLAGS) -fno-tree-vectorize"
+ 
+ FFMPEG_aarch64-unix_CONFIGURE_ARGS := \
+ 	--cross-prefix=aarch64-linux-gnu- \
