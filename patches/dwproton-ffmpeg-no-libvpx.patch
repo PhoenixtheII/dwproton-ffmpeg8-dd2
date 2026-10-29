@@ -1,0 +1,12 @@
+diff --git a/Makefile.in b/Makefile.in
+index 05a96d36..520d00e5 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -559,7 +559,6 @@ FFMPEG_CONFIGURE_ARGS += \
+ 	--enable-filters \
+ 	--enable-bsfs \
+ 	--enable-zlib \
+-	--enable-libvpx \
+ 	--enable-libvorbis \
+ 	--enable-decoder=indeo5 \
+ 	--enable-decoder=adpcm_ms \
